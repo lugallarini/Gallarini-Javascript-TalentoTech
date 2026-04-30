@@ -1,1 +1,2 @@
-Proyecto de primera clase del curso javascript, para practicar html. Contiene un header, nav, main, y footer para paracticar las funcionalidades de HTML.
+Proyecto del curso javascript. 
+Decidi crear una pagina para un e-commerce de ropa. Empecé por el html, 
