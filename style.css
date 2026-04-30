@@ -13,7 +13,7 @@ body {
 header{
     display: flex;
     font-size: 20px;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     padding: 50px 20px;
     margin: 20px;
@@ -32,9 +32,13 @@ footer,h1,main{
     background-color: #f3a6d0;
     padding: 20px;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 95vw;
     height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
 }
 #btn{   
 
@@ -42,6 +46,25 @@ footer,h1,main{
     color: white;
     border: none;
     padding: 10px 20px;
-    border:none;
     cursor: pointer;
+    align-self: center;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/*media query*/
+
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column; 
+        height: auto; 
+        padding: 20px; 
+        gap: 15px; 
+    }
+
+    .introduccion {
+        height: auto; 
+        padding: 40px 20px;    
+    }
 }
