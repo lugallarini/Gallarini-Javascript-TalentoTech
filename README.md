@@ -1,0 +1,1 @@
+Proyecto de primera clase del curso javascript, para practicar html. Contiene un header, nav, main, y footer para paracticar las funcionalidades de HTML.
