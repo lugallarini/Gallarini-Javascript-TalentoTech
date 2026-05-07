@@ -5,13 +5,18 @@
     font-family: "Audiowide", sans-serif;
 }
 
+html{
+
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url(https://images.unsplash.com/vector-1765798010015-26cc47ab6e90?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: #98c6eb;
-    color: #512f00;
+    color: #382419;
 }
 
 header{
@@ -20,16 +25,18 @@ header{
     justify-content: left;
     padding:20px 50px;
     margin: 20px;
-    background-color: #512f00;
+    background-color: #382419;
     color: #ffffff;
     border-radius: 20px;
     width: 97vw;
     height: auto;
 }
+
 main{
     display: flex;
     justify-content: center;
 }
+
 .introduccion{
     background-color: #ffffff;
     padding: 10px 35px;
@@ -87,5 +94,11 @@ footer,h1,main{
     .introduccion {
         height: auto; 
         padding: 40px 20px;    
+    }
+
+    .promocion {
+ 
+        height: auto; 
+        padding: 40px 20px;
     }
 }
