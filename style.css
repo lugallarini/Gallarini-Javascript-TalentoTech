@@ -136,8 +136,13 @@ footer,h1,main{
     }
 
     .promocion {
-        width: auto;
+        width: 40vw;
         height: auto; 
         padding: 40px 20px;
     }
+
+    .producto {
+        width: 80%;
+    }
 }
+
