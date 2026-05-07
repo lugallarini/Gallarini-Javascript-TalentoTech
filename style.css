@@ -91,6 +91,11 @@ footer,h1,main{
         gap: 15px; 
     }
 
+    main{
+    display: flex;
+    justify-content: center;
+    }
+
     .introduccion {
         width: 40vw;
         height: auto; 
