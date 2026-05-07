@@ -92,12 +92,13 @@ footer,h1,main{
     }
 
     .introduccion {
+        width: 40vw;
         height: auto; 
         padding: 40px 20px;    
     }
 
     .promocion {
- 
+        width: 40vw;
         height: auto; 
         padding: 40px 20px;
     }
