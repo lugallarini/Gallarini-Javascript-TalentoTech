@@ -8,6 +8,8 @@
 html{
 
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #382419 #98c6eb;
 }
 
 body {
@@ -56,7 +58,7 @@ main{
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
-    width: 30vw;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -113,4 +115,29 @@ footer,h1,main{
 
 /*media query*/
 
+@media (max-width: 768px) {
+    
+    header {
+        flex-direction: column; 
+        height: auto; 
+        padding: 20px; 
+        gap: 15px; 
+    }
 
+    main{
+        display: flex;
+        justify-content: center;
+    }
+
+    .introduccion {
+        width: 40vw;
+        height: auto; 
+        padding: 40px 20px;    
+    }
+
+    .promocion {
+        width: auto;
+        height: auto; 
+        padding: 40px 20px;
+    }
+}
