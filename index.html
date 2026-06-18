@@ -5,56 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/carrito.css">
     <title>Urbano Clothes</title>
 </head>
 <body>
-    <header class="header">
-        <h1>Urbano Clothes</h1>
-        <a href="carrito.html" class="link-nav">Ver Carrito 🛒</a>
-    </header>
-    <main>
-        
-        <section class="introduccion">
-            <h2>Bienvenides a mi tienda</h2>
-            <p>Acá vas a encontrar ropa de todo tipo y para toda ocasión.</p>
-            <button id="btn">Click aquí!</button>
-        </section>
-        <section class="promocion">
-            <h2>Promociones de Verano!</h2>
-            <p>Hoy hay 20% de descuento en toda la tienda!</p>
-            <p>10% adicional acumulable pagando con transferencia bancaria</p>
-        </section>
 
-        <div class="grillaProductos">
-            <div class="producto"> 
-                <img src="https://polamarketing.com/wp-content/uploads/2025/08/1.jpg" alt="Producto 1" class="imgProducto">
-                <h3>Producto 1</h3>
-                <p>$18.000</p>
-            </div>
-            <div class="producto"> 
-                <img src="https://img.magnific.com/free-photo/two-beautiful-women-posing-camera-fashionable-clothes_132075-14007.jpg?semt=ais_hybrid&w=740&q=80" alt="Producto 2" class="imgProducto">
-                <h3>Producto 2</h3>
-                <p>$15.000</p>
-            </div>
-            <div class="producto"> 
-                <img src="https://st2.depositphotos.com/1000689/10078/i/950/depositphotos_100781626-stock-photo-fashion-business-model-in-the.jpg" alt="Producto 3" class="imgProducto">
-                <h3>Producto 3</h3>
-                <p>$33.000</p>
-            </div>
-            <div class="producto"> 
-                <h3>Producto 4</h3>
-                <p>$20.000</p>
-            </div>
-            <div class="producto"> 
-                <h3>Producto 5</h3>
-                <p>$6.000</p>
+    <!-- HEADER -->
+    <header class="header">
+        <span class="header-logo">Urbano Clothes</span>
+        <nav class="nav-header">
+            <a href="index.html" class="link-nav link-nav--activo">Inicio</a>
+            <a href="pages/tienda.html" class="link-nav">Tienda</a>
+            <a href="pages/carrito.html" class="link-nav">🛒 Carrito</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-contenido">
+            <p class="hero-eyebrow">Nueva colección · Verano 2026</p>
+            <h2 class="hero-titulo">Vestite con<br>actitud urbana.</h2>
+            <p class="hero-subtitulo">Ropa de calle pensada para moverse, para verse bien y para durar.</p>
+            <div class="hero-botones">
+                <a href="pages/tienda.html" class="btn-hero-principal">Ver colección</a>
+                <a href="#destacados" class="btn-hero-secundario">Ver destacados ↓</a>
             </div>
         </div>
+        <div class="hero-badge">
+            <span class="badge-numero">20%</span>
+            <span class="badge-texto">off en toda<br>la tienda hoy</span>
+        </div>
+    </section>
+
+    <!-- BANNER PROMO -->
+    <div class="banner-promo">
+        <span>🔥 20% de descuento en toda la tienda</span>
+        <span class="separador">·</span>
+        <span>💳 10% adicional con transferencia bancaria</span>
+        <span class="separador">·</span>
+        <span>📦 Envío gratis en compras mayores a $30.000</span>
+    </div>
+
+    <main>
+
+        <!-- DESTACADOS -->
+        <section class="seccion-destacados" id="destacados">
+            <h2 class="seccion-titulo">Productos destacados</h2>
+            <p class="seccion-subtitulo">Lo más elegido de la semana</p>
+
+            <div class="grillaProductos">
+
+                <div class="producto">
+                    <div class="producto-imagen-wrapper">
+                        <img src="https://polamarketing.com/wp-content/uploads/2025/08/1.jpg" alt="Conjunto urbano negro" class="imgProducto">
+                        <span class="producto-tag">Más vendido</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Campera de jean</h3>
+                        <p class="producto-descripcion">Campera de jean oversize</p>
+                        <div class="producto-precio-fila">
+                            <span class="precio-tachado">$22.500</span>
+                            <span class="precio-actual">$18.000</span>
+                        </div>
+                        <a href="pages/tienda.html" class="btn-ver">Ver en tienda</a>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-imagen-wrapper">
+                        <img src="https://img.magnific.com/free-photo/two-beautiful-women-posing-camera-fashionable-clothes_132075-14007.jpg?semt=ais_hybrid&w=740&q=80" alt="Looks de verano" class="imgProducto">
+                        <span class="producto-tag nuevo">Nuevo</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3>Sueter de hilo</h3>
+                        <p class="producto-descripcion">Colores otoñales y tejido liviano</p>
+                        <div class="producto-precio-fila">
+                            <span class="precio-tachado">$18.750</span>
+                            <span class="precio-actual">$15.000</span>
+                        </div>
+                        <a href="pages/tienda.html" class="btn-ver">Ver en tienda</a>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-imagen-wrapper">
+                        <img src="https://st2.depositphotos.com/1000689/10078/i/950/depositphotos_100781626-stock-photo-fashion-business-model-in-the.jpg" alt="Estilo ejecutivo casual" class="imgProducto">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Jean con parches</h3>
+                        <p class="producto-descripcion">Jean de corte clasico con parches de distintos tonos.</p>
+                        <div class="producto-precio-fila">
+                            <span class="precio-tachado">$41.250</span>
+                            <span class="precio-actual">$33.000</span>
+                        </div>
+                        <a href="pages/tienda.html" class="btn-ver">Ver en tienda</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    
+        <section class="seccion-valores">
+            <div class="valor-item">
+                <span class="valor-icono">🚚</span>
+                <h4>Envío a todo el país</h4>
+                <p>Despachamos en 24–72 hs hábiles desde Buenos Aires.</p>
+            </div>
+            <div class="valor-item">
+                <span class="valor-icono">↩️</span>
+                <h4>Cambios sin drama</h4>
+                <p>30 días para cambiar talla o estilo, sin costo extra.</p>
+            </div>
+            <div class="valor-item">
+                <span class="valor-icono">🧵</span>
+                <h4>Calidad garantizada</h4>
+                <p>Trabajamos con proveedores locales seleccionados a mano.</p>
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <p>© 2026 Urbano Clothes. Todos los derechos reservados.</p>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <h3 class="footer-marca">Urbano Clothes</h3>
+                <p>Moda urbana con identidad porteña. Desde 2019 vestimos a quienes eligen moverse con estilo.</p>
+                <p class="footer-redes">
+                    <a href="#" class="footer-link-social">Instagram</a>
+                    <a href="#" class="footer-link-social">TikTok</a>
+                    <a href="#" class="footer-link-social">Facebook</a>
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-titulo-col">Navegación</h4>
+                <ul class="footer-lista">
+                    <li><a href="index.html" class="footer-link">Inicio</a></li>
+                    <li><a href="pages/tienda.html" class="footer-link">Tienda</a></li>
+                    <li><a href="pages/carrito.html" class="footer-link">Mi carrito</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-titulo-col">Ayuda</h4>
+                <ul class="footer-lista">
+                    <li><a href="#" class="footer-link">Preguntas frecuentes</a></li>
+                    <li><a href="#" class="footer-link">Política de cambios</a></li>
+                    <li><a href="#" class="footer-link">Cómo comprar</a></li>
+                    <li><a href="#" class="footer-link">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-titulo-col">Contacto</h4>
+                <ul class="footer-lista footer-lista--info">
+                    <li>📍 Av. Corrientes 3421, CABA</li>
+                    <li>📞 (011) 4823-6610</li>
+                    <li>✉️ hola@urbanoclothes.com.ar</li>
+                    <li>🕐 Lun–Sáb, 10 a 20 hs</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Urbano Clothes. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
 </body>
 </html>

@@ -1,0 +1,42 @@
+
+.encabezadoTienda {
+    background-color: #ffffff;
+    padding: 20px 35px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 90vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.btnAgregar {
+    background-color: #426d91;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Audiowide", sans-serif;
+    margin-top: auto;
+    transition: background-color 0.2s;
+}
+
+.btnAgregar:hover {
+    background-color: #355778;
+}
+
+.sinImagen {
+    width: 100%;
+    height: 180px;
+    background-color: #98c6eb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #382419;
+    font-size: 13px;
+}
