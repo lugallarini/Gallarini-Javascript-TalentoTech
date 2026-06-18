@@ -5,40 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estilos/carrito.css">
     <title>Urbano Clothes</title>
 </head>
 <body>
 
-    <!-- HEADER -->
     <header class="header">
         <span class="header-logo">Urbano Clothes</span>
         <nav class="nav-header">
             <a href="index.html" class="link-nav link-nav--activo">Inicio</a>
             <a href="pages/tienda.html" class="link-nav">Tienda</a>
-            <a href="pages/carrito.html" class="link-nav">🛒 Carrito</a>
+            <a href="pages/carrito.html" class="link-nav">🛒 Carrito <span class="contador-carrito">0</span></a>
         </nav>
     </header>
 
     <section class="hero">
-        <div class="hero-contenido">
-            <p class="hero-eyebrow">Nueva colección · Verano 2026</p>
-            <h2 class="hero-titulo">Vestite con<br>actitud urbana.</h2>
-            <p class="hero-subtitulo">Ropa de calle pensada para moverse, para verse bien y para durar.</p>
-            <div class="hero-botones">
-                <a href="pages/tienda.html" class="btn-hero-principal">Ver colección</a>
-                <a href="#destacados" class="btn-hero-secundario">Ver destacados ↓</a>
-            </div>
-        </div>
-        <div class="hero-badge">
-            <span class="badge-numero">20%</span>
-            <span class="badge-texto">off en toda<br>la tienda hoy</span>
+        <p>Nueva colección · Verano 2026</p>
+        <h2>Vestite con<br>actitud urbana.</h2>
+        <p>Ropa de calle pensada para moverse, para verse bien y para durar.</p>
+        <div class="hero-botones">
+            <a href="pages/tienda.html" class="btn-hero-principal">Ver colección</a>
+            <a href="#destacados" class="btn-hero-secundario">Ver destacados ↓</a>
         </div>
     </section>
 
-    <!-- BANNER PROMO -->
     <div class="banner-promo">
         <span>🔥 20% de descuento en toda la tienda</span>
         <span class="separador">·</span>
@@ -49,7 +41,6 @@
 
     <main>
 
-        <!-- DESTACADOS -->
         <section class="seccion-destacados" id="destacados">
             <h2 class="seccion-titulo">Productos destacados</h2>
             <p class="seccion-subtitulo">Lo más elegido de la semana</p>
@@ -62,8 +53,8 @@
                         <span class="producto-tag">Más vendido</span>
                     </div>
                     <div class="producto-info">
-                        <h3>Campera de jean</h3>
-                        <p class="producto-descripcion">Campera de jean oversize</p>
+                        <h3>Conjunto urbano negro</h3>
+                        <p class="producto-descripcion">Look completo, cómodo y versátil para el día a día.</p>
                         <div class="producto-precio-fila">
                             <span class="precio-tachado">$22.500</span>
                             <span class="precio-actual">$18.000</span>
@@ -78,8 +69,8 @@
                         <span class="producto-tag nuevo">Nuevo</span>
                     </div>
                     <div class="producto-info">
-                        <h3>Sueter de hilo</h3>
-                        <p class="producto-descripcion">Colores otoñales y tejido liviano</p>
+                        <h3>Looks de verano</h3>
+                        <p class="producto-descripcion">Colores frescos y telas livianas para los días de calor.</p>
                         <div class="producto-precio-fila">
                             <span class="precio-tachado">$18.750</span>
                             <span class="precio-actual">$15.000</span>
@@ -93,8 +84,8 @@
                         <img src="https://st2.depositphotos.com/1000689/10078/i/950/depositphotos_100781626-stock-photo-fashion-business-model-in-the.jpg" alt="Estilo ejecutivo casual" class="imgProducto">
                     </div>
                     <div class="producto-info">
-                        <h3>Jean con parches</h3>
-                        <p class="producto-descripcion">Jean de corte clasico con parches de distintos tonos.</p>
+                        <h3>Estilo ejecutivo casual</h3>
+                        <p class="producto-descripcion">Elegancia sin sacrificar comodidad, ideal para la oficina.</p>
                         <div class="producto-precio-fila">
                             <span class="precio-tachado">$41.250</span>
                             <span class="precio-actual">$33.000</span>
@@ -106,7 +97,6 @@
             </div>
         </section>
 
-    
         <section class="seccion-valores">
             <div class="valor-item">
                 <span class="valor-icono">🚚</span>
@@ -125,22 +115,44 @@
             </div>
         </section>
 
+        <section class="seccion-contacto" id="contacto">
+            <h2 class="seccion-titulo">Contactanos</h2>
+            <p class="seccion-subtitulo">¿Dudas, sugerencias o un pedido especial? Escribinos.</p>
+
+            <form id="formContacto" class="formContacto" action="https://formspree.io/f/xgobjrdk" method="POST">
+                <div class="campoFormulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campoFormulario">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campoFormulario">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-hero-principal">Enviar mensaje</button>
+                <p id="estadoFormulario" class="estadoFormulario"></p>
+            </form>
+        </section>
+
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-grid">
-
             <div class="footer-col">
                 <h3 class="footer-marca">Urbano Clothes</h3>
-                <p>Moda urbana con identidad porteña. Desde 2019 vestimos a quienes eligen moverse con estilo.</p>
-                <p class="footer-redes">
+                <p>Desde 2026 vestimos a quienes eligen moverse con estilo.</p>
+                <div class="footer-redes">
                     <a href="#" class="footer-link-social">Instagram</a>
                     <a href="#" class="footer-link-social">TikTok</a>
                     <a href="#" class="footer-link-social">Facebook</a>
-                </p>
+                </div>
             </div>
-
             <div class="footer-col">
                 <h4 class="footer-titulo-col">Navegación</h4>
                 <ul class="footer-lista">
@@ -149,33 +161,32 @@
                     <li><a href="pages/carrito.html" class="footer-link">Mi carrito</a></li>
                 </ul>
             </div>
-
             <div class="footer-col">
                 <h4 class="footer-titulo-col">Ayuda</h4>
                 <ul class="footer-lista">
                     <li><a href="#" class="footer-link">Preguntas frecuentes</a></li>
                     <li><a href="#" class="footer-link">Política de cambios</a></li>
-                    <li><a href="#" class="footer-link">Cómo comprar</a></li>
                     <li><a href="#" class="footer-link">Contacto</a></li>
                 </ul>
             </div>
-
             <div class="footer-col">
                 <h4 class="footer-titulo-col">Contacto</h4>
                 <ul class="footer-lista footer-lista--info">
-                    <li>📍 Av. Corrientes 3421, CABA</li>
-                    <li>📞 (011) 4823-6610</li>
+                    <li>📍 Av. Mitre 1234, Avellaneda</li>
+                    <li>📞 (11) 6666-6666</li>
                     <li>✉️ hola@urbanoclothes.com.ar</li>
                     <li>🕐 Lun–Sáb, 10 a 20 hs</li>
                 </ul>
             </div>
-
         </div>
-
         <div class="footer-bottom">
             <p>© 2026 Urbano Clothes. Todos los derechos reservados.</p>
+            <p>Buenos Aires, Argentina</p>
         </div>
     </footer>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/contacto.js"></script>
 
 </body>
 </html>

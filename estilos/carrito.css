@@ -3,6 +3,17 @@
    Complementa style.css (no lo reemplaza)
    ============================================ */
 
+.carritoVacio {
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 14px;
+}
+
+.carritoVacio a {
+    color: #426d91;
+    font-weight: bold;
+}
+
 /* --- Nav del header (reutilizable en todas las páginas) --- */
 
 .nav-header {

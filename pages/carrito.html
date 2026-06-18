@@ -13,11 +13,11 @@
 <body>
 
     <header class="header">
-        <h1>Urbano Clothes</h1>
+        <span class="header-logo">Urbano Clothes</span>
         <nav class="nav-header">
             <a href="../index.html" class="link-nav">Inicio</a>
             <a href="tienda.html" class="link-nav">Tienda</a>
-            <a href="carrito.html" class="link-nav link-nav--activo">🛒 Carrito</a>
+            <a href="carrito.html" class="link-nav link-nav--activo">🛒 Carrito <span class="contador-carrito">0</span></a>
         </nav>
     </header>
 
@@ -26,66 +26,10 @@
         <section class="carrito" id="seccion-carrito">
             <h2>Tu Carrito</h2>
 
-            <div class="itemsCarrito">
+            <!-- Items y resumen se completan dinámicamente desde js/carrito.js (localStorage) -->
+            <div class="itemsCarrito"></div>
 
-                <div class="itemCarrito">
-                    <img src="https://polamarketing.com/wp-content/uploads/2025/08/1.jpg" alt="Producto 1" class="imgItemCarrito">
-                    <div class="detallesItem">
-                        <h4>Producto 1</h4>
-                        <p class="precioItem">$18.000</p>
-                        <div class="cantidadItem">
-                            <button class="btnCantidad">-</button>
-                            <span class="numeroItem">1</span>
-                            <button class="btnCantidad">+</button>
-                        </div>
-                    </div>
-                    <button class="btnEliminar" title="Eliminar">✕</button>
-                </div>
-
-                <div class="itemCarrito">
-                    <img src="https://img.magnific.com/free-photo/two-beautiful-women-posing-camera-fashionable-clothes_132075-14007.jpg?semt=ais_hybrid&w=740&q=80" alt="Producto 2" class="imgItemCarrito">
-                    <div class="detallesItem">
-                        <h4>Producto 2</h4>
-                        <p class="precioItem">$15.000</p>
-                        <div class="cantidadItem">
-                            <button class="btnCantidad">-</button>
-                            <span class="numeroItem">2</span>
-                            <button class="btnCantidad">+</button>
-                        </div>
-                    </div>
-                    <button class="btnEliminar" title="Eliminar">✕</button>
-                </div>
-
-                <div class="itemCarrito">
-                    <img src="https://st2.depositphotos.com/1000689/10078/i/950/depositphotos_100781626-stock-photo-fashion-business-model-in-the.jpg" alt="Producto 3" class="imgItemCarrito">
-                    <div class="detallesItem">
-                        <h4>Producto 3</h4>
-                        <p class="precioItem">$33.000</p>
-                        <div class="cantidadItem">
-                            <button class="btnCantidad">-</button>
-                            <span class="numeroItem">1</span>
-                            <button class="btnCantidad">+</button>
-                        </div>
-                    </div>
-                    <button class="btnEliminar" title="Eliminar">✕</button>
-                </div>
-
-            </div>
-
-            <div class="resumenCarrito">
-                <div class="resumenLinea">
-                    <span>Subtotal</span>
-                    <span>$81.000</span>
-                </div>
-                <div class="resumenLinea descuento">
-                    <span>Descuento 20% verano</span>
-                    <span>- $16.200</span>
-                </div>
-                <div class="resumenLinea total">
-                    <span>Total</span>
-                    <span>$64.800</span>
-                </div>
-            </div>
+            <div class="resumenCarrito"></div>
 
             <div class="accionesCarrito">
                 <button id="btnVaciar" class="btnSecundario">Vaciar carrito</button>
@@ -99,6 +43,8 @@
     <footer>
         <p>© 2026 Urbano Clothes. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="../js/carrito.js"></script>
 
 </body>
 </html>
