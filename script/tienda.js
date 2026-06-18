@@ -5,7 +5,7 @@
    Solo corre en tienda.html.
    ============================================ */
 
-const URL_API = "https://fakestoreapi.com/products/category/men's clothing";
+const URL_API = "https://fakestoreapi.com/products/category/women's%20clothing";
 
 async function cargarProductos() {
     const contenedor = document.querySelector(".grillaProductos");
