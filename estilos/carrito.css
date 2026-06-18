@@ -1,0 +1,131 @@
+.carrito {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    width: 90vw;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #382419;
+}
+
+.carrito h2 {
+    text-align: center;
+    border-bottom: 2px solid #98c6eb;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.itemsCarrito {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.itemCarrito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #98c6eb;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.imgItemCarrito {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.detallesItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex-grow: 1;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.detallesItem h4, .detallesItem p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.cantidadItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.btnCantidad {
+    background-color: #382419;
+    color: white;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Audiowide", sans-serif;
+}
+
+.btnEliminar {
+    background-color: #382419; 
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Audiowide", sans-serif;
+}
+
+.btnEliminar:hover {
+    background-color: #e74c3c;
+}
+
+.totalCarrito {
+    text-align: right;
+    border-top: 2px solid #98c6eb;
+    padding-top: 15px;
+}
+
+.accionesCarrito {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btnPrincipal {
+    background-color: #426d91;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    flex-grow: 2;
+    font-family: "Audiowide", sans-serif;
+}
+
+.btnSecundario {
+    background-color: #382419;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    flex-grow: 1;
+    font-family: "Audiowide", sans-serif;
+}
