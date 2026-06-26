@@ -2,8 +2,6 @@
 const CLAVE_CARRITO = "urbanoClothesCarrito";
 const DESCUENTO_VERANO = 0.20; 
 
-// --- Funciones base de localStorage ---
-
 function obtenerCarrito() {
     const datos = localStorage.getItem(CLAVE_CARRITO);
     return datos ? JSON.parse(datos) : [];
@@ -13,8 +11,6 @@ function guardarCarrito(carrito) {
     localStorage.setItem(CLAVE_CARRITO, JSON.stringify(carrito));
     actualizarContadorCarrito();
 }
-
-// --- Operaciones sobre el carrito ---
 
 function agregarAlCarrito(producto) {
     const carrito = obtenerCarrito();
@@ -72,8 +68,6 @@ function calcularTotales(carrito) {
     return { subtotal, descuento, total };
 }
 
-// --- Contador en el header (todas las páginas) ---
-
 function actualizarContadorCarrito() {
     const contador = document.querySelector(".contador-carrito");
     if (!contador) return;
@@ -82,8 +76,6 @@ function actualizarContadorCarrito() {
     contador.textContent = totalItems;
     contador.style.display = totalItems > 0 ? "inline-block" : "none";
 }
-
-// --- Aviso simple cuando se agrega un producto ---
 
 function mostrarAviso(mensaje) {
     const aviso = document.createElement("div");
@@ -97,8 +89,6 @@ function mostrarAviso(mensaje) {
         setTimeout(() => aviso.remove(), 300);
     }, 2200);
 }
-
-// --- Render del carrito (solo en carrito.html) ---
 
 function renderizarCarrito() {
     const contenedor = document.querySelector(".itemsCarrito");
@@ -137,8 +127,6 @@ function renderizarCarrito() {
     }
 }
 
-// --- Eventos delegados (botones generados dinámicamente) ---
-
 document.addEventListener("click", (e) => {
     if (e.target.matches(".btnCantidad")) {
         const id = e.target.dataset.id;
@@ -165,8 +153,6 @@ document.addEventListener("click", (e) => {
         renderizarCarrito();
     }
 });
-
-// --- Inicialización ---
 
 document.addEventListener("DOMContentLoaded", () => {
     actualizarContadorCarrito();

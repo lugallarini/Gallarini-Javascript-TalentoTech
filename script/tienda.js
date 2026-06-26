@@ -1,10 +1,3 @@
-/* ============================================
-   TIENDA — js/tienda.js
-   Trae productos desde FakeStoreAPI y arma la grilla
-   dinámicamente. Cada card tiene su botón "Agregar".
-   Solo corre en tienda.html.
-   ============================================ */
-
 const URL_API = "https://fakestoreapi.com/products/category/women's%20clothing";
 
 async function cargarProductos() {
@@ -69,8 +62,6 @@ function renderizarProductos(productosApi, contenedor) {
     }).join("");
 }
 
-// --- Delegación de eventos para el botón "Agregar" ---
-
 document.addEventListener("click", (e) => {
     if (!e.target.matches(".btnAgregar")) return;
 
@@ -82,7 +73,7 @@ document.addEventListener("click", (e) => {
         imagen: boton.dataset.imagen
     };
 
-    agregarAlCarrito(producto); // función definida en carrito.js
+    agregarAlCarrito(producto); //función definida en carrito.js
 });
 
 document.addEventListener("DOMContentLoaded", cargarProductos);
